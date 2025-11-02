@@ -19,5 +19,11 @@ pipeline {
                 echo 'Deploying the application...'
             }
         }
+        stage('Verify') {
+            steps {
+                echo 'Verifying container status...'
+            }
+        }
+
     }
 }
